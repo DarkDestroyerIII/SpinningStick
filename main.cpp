@@ -23,9 +23,11 @@ int main(){
         cout << "\r\x1B[?25l\x1B[92mPress Enter to Continue... " << symbols[i] << "\x1B[K";
 
         this_thread::sleep_for(chrono::milliseconds(50));//              The A is cursor up
-        cout << "\x1B[97m\x1B[?25h";//moves cursure up 1 and sets color white
+        //moves cursure up 1 and sets color white
     }
   }
+  cout << "\x1B[97m\x1B[?25h";
+
   cout << "Stall successfully ended";
   /// cin.ignore(255,'\n');
   string test;
